@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chocolate Earth Foundation — Grow, Support, Sustain</title>
+  <meta name="description" content="Chocolate Earth Foundation teaches sustainable farming (aquaponics, hydroponics, aeroponics, microgreens), provides social services, and runs fundraisers to support communities." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0f1115; --text:#e9eef5; --muted:#b7c2d0; --brand:#6ee7b7; --brand-2:#a78bfa;
+      --card:#151923; --stroke:#273043; --accent:#ffd166;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
+    a{color:var(--brand)}
+    .container{max-width:1120px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(15,17,21,.6);border-bottom:1px solid var(--stroke);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .nav a.logo{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--text);font-weight:800}
+    .nav ul{list-style:none;margin:0;padding:0;display:flex;gap:20px}
+    .nav a.link{text-decoration:none;color:var(--muted);font-weight:600}
+    .nav a.cta{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#0b0f14;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:800}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:48px 0}
+    .badge{display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid var(--stroke);border-radius:999px;color:var(--muted);font-size:12px}
+    h1{font-size:48px;line-height:1.1;margin:16px 0}
+    .lead{font-size:18px;color:var(--muted);max-width:58ch}
+    .hero .actions{display:flex;gap:12px;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:10px;border:1px solid var(--stroke);text-decoration:none;color:var(--text);font-weight:700}
+    .btn.primary{background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#0b0f14;border:0}
+    .media{background:linear-gradient(135deg,#1c2333,#0e1422);border:1px solid var(--stroke);border-radius:16px;min-height:280px;display:grid;place-items:center;color:var(--muted)}
+    .grid{display:grid;gap:18px}
+    .cols-3{grid-template-columns:repeat(3,1fr)}
+    .cols-2{grid-template-columns:repeat(2,1fr)}
+    .card{background:var(--card);border:1px solid var(--stroke);border-radius:14px;padding:20px}
+    h2{font-size:28px;margin:0 0 10px}
+    h3{margin:0 0 6px}
+    .kpis{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px}
+    .kpi{padding:10px 12px;border:1px dashed var(--stroke);border-radius:10px;color:var(--muted);font-size:14px}
+    .section{padding:40px 0}
+    .list{margin:8px 0 0 18px;color:var(--muted)}
+    .faq details{background:var(--card);border:1px solid var(--stroke);border-radius:10px;padding:14px}
+    .faq details+details{margin-top:10px}
+    .team{display:grid;gap:16px}
+    .member{background:var(--card);border:1px solid var(--stroke);border-radius:14px;padding:16px;display:flex;gap:16px;align-items:center}
+    .avatar{width:56px;height:56px;border-radius:50%;background:#232a3a;border:1px solid var(--stroke)}
+    footer{border-top:1px solid var(--stroke);color:var(--muted);padding:24px 0}
+    .disclaimer{font-size:12px;color:#9aa6b2;margin-top:6px}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .cols-3{grid-template-columns:1fr}
+      .cols-2{grid-template-columns:1fr}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"NGO",
+    "name":"Chocolate Earth Foundation",
+    "url":"https://chocolateearthfoundation.org",
+    "description":"Non-profit focused on sustainable farming education and social services; offers workshops in aquaponics, hydroponics, aeroponics, microgreens; runs fundraisers and merchandise.",
+    "slogan":"Grow your own food. Support your community.",
+    "areaServed":"US",
+    "sameAs":[ "https://chocolateearthfoundation.org/about/" ]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#">
+        <span style="width:28px;height:28px;display:inline-block;border-radius:6px;background:linear-gradient(135deg,var(--accent),#bb6bd9);border:1px solid var(--stroke)"></span>
+        <span>Chocolate Earth Foundation</span>
+      </a>
+      <ul>
+        <li><a class="link" href="#mission">Mission</a></li>
+        <li><a class="link" href="#programs">Programs</a></li>
+        <li><a class="link" href="#get-involved">Get involved</a></li>
+        <li><a class="link" href="#team">Team</a></li>
+        <li><a class="cta" href="#donate">Donate</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="container hero">
+      <div>
+        <span class="badge">Non‑profit • Sustainable farming • Social services</span>
+        <h1>Grow healthy food at home and nourish your community</h1>
+        <p class="lead">
+          Chocolate Earth Foundation teaches aquaponics, hydroponics, aeroponics, and microgreens so anyone can grow fresh produce at home. We also provide social services and run fundraisers to support our neighbors.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#get-involved">Get involved</a>
+          <a class="btn" href="#programs">Explore programs</a>
+        </div>
+        <div class="kpis">
+          <div class="kpi">Workshops • Home food growing</div>
+          <div class="kpi">Social services • Fundraisers</div>
+          <div class="kpi">Support us with merch</div>
+        </div>
+      </div>
+      <div class="media" aria-label="hero-image">
+        <span>Hero image placeholder (urban garden / hydroponics)</span>
+      </div>
+    </section>
+
+    <!-- MISSION -->
+    <section id="mission" class="section">
+      <div class="container grid cols-2">
+        <div class="card">
+          <h2>Our Mission</h2>
+          <p>
+            Promote sustainable farming practices and provide social services to the community. We believe everyone can learn to grow fruits and vegetables at home and make a difference together.
+          </p>
+          <p class="disclaimer">Source: Chocolate Earth Foundation site.</p>
+        </div>
+        <div class="card">
+          <h3>What we focus on</h3>
+          <ul class="list">
+            <li>Hands‑on education: aquaponics, hydroponics, aeroponics, microgreens</li>
+            <li>Affordable access to resources and workshops</li>
+            <li>Community support through social services</li>
+            <li>Fundraisers and merchandise that power our programs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs" class="section">
+      <div class="container">
+        <h2>Programs</h2>
+        <div class="grid cols-3">
+          <div class="card">
+            <h3>Home Growing Courses</h3>
+            <p>Learn aquaponics, hydroponics, aeroponics, and microgreens so you can grow nutritious food year‑round.</p>
+            <a class="btn" href="#get-involved">Join a workshop</a>
+          </div>
+          <div class="card">
+            <h3>Social Services</h3>
+            <p>We coordinate support for those in need and connect people to local resources and assistance.</p>
+            <a class="btn" href="#contact">Request help</a>
+          </div>
+          <div class="card">
+            <h3>Fundraisers & Merch</h3>
+            <p>Support the mission by purchasing t‑shirts and items—proceeds help keep programs affordable.</p>
+            <a class="btn" href="#donate">Shop & donate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT CTA -->
+    <section id="get-involved" class="section">
+      <div class="container grid cols-2">
+        <div class="media"><span>Photo: volunteers / class in session</span></div>
+        <div class="card">
+          <h2>Get involved</h2>
+          <p>Take a class, volunteer at an event, sponsor a workshop, or contribute to our fundraiser.</p>
+          <div class="actions">
+            <a class="btn primary" href="#donate">Donate</a>
+            <a class="btn" href="#contact">Volunteer</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary>What is Chocolate Earth Foundation?</summary>
+            <p>A non‑profit focused on sustainable farming education and social services.</p>
+          </details>
+          <details>
+            <summary>How can I get involved?</summary>
+            <p>Join workshops, volunteer, donate, or support via t‑shirts and merchandise.</p>
+          </details>
+          <details>
+            <summary>How do I contact you?</summary>
+            <p>Use the contact form below and we’ll get back to you.</p>
+          </details>
+        </div>
+        <p class="disclaimer">FAQ adapted from the organization’s About page.</p>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="section">
+      <div class="container">
+        <h2>Team</h2>
+        <div class="team">
+          <div class="member">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <strong>John Doe</strong> — Chief Grower
+              <div class="disclaimer">Aquaponics, hydroponics, aeroponics, microgreens instructor.</div>
+            </div>
+          </div>
+          <div class="member">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <strong>Jane Smith</strong> — Head of Fundraising
+              <div class="disclaimer">Leads fundraisers and merchandise to support programs.</div>
+            </div>
+          </div>
+          <div class="member">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <strong>Michael Johnson</strong> — Social Services Coordinator
+              <div class="disclaimer">Coordinates assistance to those in need.</div>
+            </div>
+          </div>
+          <div class="member">
+            <div class="avatar" aria-hidden="true"></div>
+            <div>
+              <strong>Alice Smith</strong> — Design Director
+              <div class="disclaimer">Design and creative direction.</div>
+            </div>
+          </div>
+        </div>
+        <p class="disclaimer">Note: team role labels are taken from the site and may be placeholders.</p>
+      </div>
+    </section>
+
+    <!-- DONATE -->
+    <section id="donate" class="section">
+      <div class="container grid cols-2">
+        <div class="card">
+          <h2>Support the mission</h2>
+          <p>Your donation helps keep workshops affordable and expands our social services.</p>
+          <form onsubmit="event.preventDefault(); alert('Thank you for your support!');" aria-label="donation form">
+            <label>Amount
+              <select style="display:block;margin-top:6px;padding:10px;border-radius:8px;border:1px solid var(--stroke);background:#0b0f14;color:var(--text)">
+                <option>$25</option><option>$50</option><option>$100</option><option>Custom</option>
+              </select>
+            </label>
+            <div style="height:10px"></div>
+            <button class="btn primary" type="submit">Donate now</button>
+          </form>
+          <p class="disclaimer">Prefer merch? Join our fundraiser and pick up a t‑shirt.</p>
+        </div>
+        <div class="media"><span>Photo: donors / community garden harvest</span></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container grid cols-2">
+        <div class="card">
+          <h2>Contact us</h2>
+          <form onsubmit="event.preventDefault(); alert('Thanks! We will reach out soon.');">
+            <label>Name
+              <input required placeholder="Your name" style="width:100%;margin-top:6px;padding:12px;border-radius:8px;border:1px solid var(--stroke);background:#0b0f14;color:var(--text)"/>
+            </label>
+            <div style="height:10px"></div>
+            <label>Email
+              <input required type="email" placeholder="you@example.com" style="width:100%;margin-top:6px;padding:12px;border-radius:8px;border:1px solid var(--stroke);background:#0b0f14;color:var(--text)"/>
+            </label>
+            <div style="height:10px"></div>
+            <label>Message
+              <textarea rows="4" placeholder="How can we help?" style="width:100%;margin-top:6px;padding:12px;border-radius:8px;border:1px solid var(--stroke);background:#0b0f14;color:var(--text)"></textarea>
+            </label>
+            <div style="height:12px"></div>
+            <button class="btn" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Ways to help</h3>
+          <ul class="list">
+            <li>Volunteer at a workshop</li>
+            <li>Host a fundraiser</li>
+            <li>Donate supplies or sponsor a class</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© <span id="year"></span> Chocolate Earth Foundation • All rights reserved</div>
+      <div class="disclaimer">
+        This landing page compiles information from Chocolate Earth Foundation’s public pages; update copy, images, and links as needed.
+      </div>
+    </div>
+    <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
